@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r esm src/server",
+    "serve": "eval $(cat .env) nodemon --ext js,graphql -r esm src/server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.9.12",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "google-auth-library": "^5.5.1",
+    "merge-graphql-schemas": "^1.7.3",
+    "mongoose": "^5.7.12"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}

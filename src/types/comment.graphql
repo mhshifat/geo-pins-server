@@ -1,0 +1,9 @@
+type Comment {
+  text: String
+  createdAt: String
+  author: User
+}
+
+type Mutation {
+  createComment(pinId: ID!, text: String!): Pin
+}
